@@ -28,6 +28,6 @@ animation_json = json.dumps({
 })
 animation_base64 = base64.b64encode(animation_json.encode()).decode()
 
-curl_command = f"""curl -s https://raw.githubusercontent.com/yourusername/yourrepo/main/animation_script.py | python3 - {animation_base64}"""
+curl_command = f"""https://raw.githubusercontent.com/Isaki12/xanimate/main/animation_script.py | python3 - {animation_base64}"""
 
 print(curl_command)
